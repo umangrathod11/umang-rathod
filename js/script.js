@@ -1,5 +1,5 @@
 
-// Preloader
+
 
 window.addEventListener('load', function(){
     document.querySelector('.preloader').classList.add('opacity-0');
@@ -8,14 +8,14 @@ window.addEventListener('load', function(){
     }, 1000);
 });
 
-// iTyped 
+ 
 
 window.ityped.init(document.querySelector('.iTyped'), {
-    strings: ["I'm a Web Developer", 'I Love Html5', 'I Love CSS3', 'I Love Jquery', 'I Love Laravel'],
+    strings: ["I'm a Web Developer", 'I Love Html5', 'I Love CSS', 'I Love React Js', 'I Love Shopify'],
     loop: true
 });
 
-// Portfolio Item Filter
+
 
 const filterContainer = document.querySelector('.portfolio-filter'),
     filterBtns = filterContainer.children,
@@ -45,7 +45,6 @@ const filterContainer = document.querySelector('.portfolio-filter'),
         });
     }
 
-// Portfolio Lighbox
 
 const lightbox = document.querySelector('.lightbox'),
     lightboxImg = lightbox.querySelector('.lightbox-img'),
@@ -92,7 +91,7 @@ function nextItem() {
     changeItem();
 }
 
-// close lightbox
+
 
 lightbox.addEventListener('click', function(event){
     if(event.target === lightboxClose || event.target === lightbox){
@@ -100,7 +99,6 @@ lightbox.addEventListener('click', function(event){
     }
 });
 
-// Aside Navbar
 
 const nav = document.querySelector('.nav'),
     navList = nav.querySelectorAll('li'),
